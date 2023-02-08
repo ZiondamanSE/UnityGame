@@ -1144,6 +1144,8 @@ GameObject:
   - component: {fileID: 871484478}
   - component: {fileID: 871484477}
   - component: {fileID: 871484476}
+  - component: {fileID: 871484483}
+  - component: {fileID: 871484482}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1322,10 +1324,44 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.9424484, y: 3.7491548, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1491215583}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &871484482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871484475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19f4f4ef0b0ae64bb48056b63592e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helth: 10
+  BulletDamage: 5
+--- !u!114 &871484483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871484475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ded9d7ff9abf3d4193b382d700ddb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7410810720528565498, guid: 21d90e8ceb732e54996b0068657d9a49, type: 3}
+  Target: {fileID: 1566080082}
+  firePoint: {fileID: 1491215583}
+  bulletForce: 20
+  distanceToShoot: 0
+  distanceToStop: 10
+  fireRate: 0.5
 --- !u!1 &908013956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,6 +1798,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1491215582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491215583}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491215583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491215582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.012448311, y: 1.269, z: -0.9469647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871484481}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514552969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1951,7 @@ GameObject:
   - component: {fileID: 1566080079}
   - component: {fileID: 1566080083}
   - component: {fileID: 1566080084}
+  - component: {fileID: 1566080085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2037,8 +2104,22 @@ MonoBehaviour:
   firePoint: {fileID: 230920980}
   bulletPrefab: {fileID: 3718063434896384775, guid: 3cfbdc8a15416bf4bb22e59ee91f2da9, type: 3}
   bulletForce: 20
-  FireRate: 0.1
+  FireRate: 0.5
   countdown: 0
+--- !u!114 &1566080085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566080078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb286a1abf09f246bbb0fed96b5f858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helth: 100
+  BulletDamage: 5
 --- !u!1 &1610744884
 GameObject:
   m_ObjectHideFlags: 0

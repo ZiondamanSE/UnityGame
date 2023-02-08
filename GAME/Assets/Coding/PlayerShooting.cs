@@ -13,7 +13,6 @@ public class PlayerShooting : MonoBehaviour
     public float FireRate = 3;
     public float countdown = 3; 
 
-
     // Update is called once per frame
     void Update ()
     {

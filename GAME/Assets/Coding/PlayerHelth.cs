@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerHelth : MonoBehaviour
 {
-    public float helth;
-    public float BulletDamage;
+    public int helth;
+    public int BulletDamage;
+    public int currentHealth;
+    public int maxHealth;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,6 +15,7 @@ public class PlayerHelth : MonoBehaviour
         {
             helth = helth - BulletDamage;
             Debug.Log(helth);
+            currentHealth -= BulletDamage;
         }
 
         if (helth <= 0)

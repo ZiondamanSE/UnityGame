@@ -13,6 +13,7 @@ public class EnemyHelth : MonoBehaviour
         {
             helth = helth - BulletDamage;
             Debug.Log(helth);
+
         }
 
         if (helth <= 0)

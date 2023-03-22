@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 47c38601299e49f4ba234dbe8a16b1fc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Glancyr
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 02a070380e888f64e8343c50e5cf9d67, type: 3}
+  - {fileID: 12800000, guid: 4426cff2e558ddb4daee5e94cb937f05, type: 3}
+  - {fileID: 12800000, guid: 6309ad22fa518ca4d99f5bb5b258ea4d, type: 3}
+  - {fileID: 12800000, guid: 8497ea0ed4b21c94fb968777fae09854, type: 3}
+  - {fileID: 12800000, guid: f605e5aa20ea77e4f9da3b2aa1c12486, type: 3}
+  - {fileID: 12800000, guid: 968a4df8389468c46b0f1059cab3421e, type: 3}
+  - {fileID: 12800000, guid: 80a83cec06345e24992320d617c43fa8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

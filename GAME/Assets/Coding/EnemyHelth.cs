@@ -19,6 +19,7 @@ public class EnemyHelth : MonoBehaviour
         if (helth <= 0)
         {
             Destroy(gameObject, 0.2f);
+
         }
     }
 }

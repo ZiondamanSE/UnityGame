@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHelth : MonoBehaviour
@@ -21,6 +22,7 @@ public class PlayerHelth : MonoBehaviour
         if (helth <= 0)
         {
             Destroy(gameObject, 0.2f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
